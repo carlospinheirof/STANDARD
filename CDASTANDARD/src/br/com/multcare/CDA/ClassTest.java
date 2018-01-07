@@ -20,7 +20,7 @@ public class ClassTest {
 						"MA","CHESTNUT HILL","02467", "850 BOYLSTON ST SUITE 530", "(617)732-9900",
 						"WP", "Doe", "John", "M.", "M.D.", "BPG AT 850 BOYLSTON - INTERNAL MEDICINE ");
 
-		cda.CDA_PROBLEM("DOCSECT","EVN", "10.20.22.2.5.1", "11450-4"," 6.1","LOINC","Problema atual",
+		cda.CDA_PROBLEM("DOCSECT","EVN", "10.20.22.2.5.1", "11450-4","6.1","LOINC","Problema atual",
 					"Histórico da doença atual","Ditar como está o histórico do paciente em relação a doença que ele possui.",
 					"DRIV","10.20.22.4.3","NI","CONC","5.6","active","20140212130114","SUBJ","10.20.22.4.4","5.4","text/plain",
 					"#Problem-1","completed","CD");
