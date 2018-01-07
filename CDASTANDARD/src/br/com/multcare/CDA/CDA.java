@@ -257,16 +257,16 @@ public class CDA {
 		TAG R3 = wcda.xml_CREATE("setId extension=\""+r2+"\" root=\"2.16.840.1.113883."+s5+"\"", "");
 		TAG R4 = wcda.xml_CREATE("versionNumber value=\""+r3+"\"", "");
 
-		TAG OFF0 = wcda.xml_CREATE("componentOf","");
-		TAG OFF1 = wcda.xml_CREATE("encompassingEncounter", "");
-		TAG OFF2 = wcda.xml_CREATE("id root=\""+c0+"\" extension=\""+c1+"\"", "");
-		TAG OFF3 = wcda.xml_CREATE("effectiveTime value=\""+c2+"\"","");
-		TAG OFF4 = wcda.xml_CREATE("responsibleParty","");
-		TAG OFF5 = wcda.xml_CREATE("assignedEntity", "");
-		TAG OFF6 = wcda.xml_CREATE("id nullFlavor=\""+c3+"\"", "");
-		TAG OFF7 = wcda.xml_CREATE("addr","");
-		TAG OFF8 = wcda.xml_CREATE("state", ""+c4+"");
-		TAG OFF9 = wcda.xml_CREATE("city",""+c5+"");
+		TAG OFF0 =wcda.xml_CREATE("componentOf","");
+		TAG OFF1 =wcda.xml_CREATE("encompassingEncounter", "");
+		TAG OFF2 =wcda.xml_CREATE("id root=\""+c0+"\" extension=\""+c1+"\"", "");
+		TAG OFF3 =wcda.xml_CREATE("effectiveTime value=\""+c2+"\"","");
+		TAG OFF4 =wcda.xml_CREATE("responsibleParty","");
+		TAG OFF5 =wcda.xml_CREATE("assignedEntity", "");
+		TAG OFF6 =wcda.xml_CREATE("id nullFlavor=\""+c3+"\"", "");
+		TAG OFF7 =wcda.xml_CREATE("addr","");
+		TAG OFF8 =wcda.xml_CREATE("state", ""+c4+"");
+		TAG OFF9 =wcda.xml_CREATE("city",""+c5+"");
 		TAG OFF10 =wcda.xml_CREATE("postalCode", ""+c6+"");
 		TAG OFF11 =wcda.xml_CREATE("streetAddressLine", ""+c7+"");
 		TAG OFF12 =wcda.xml_CREATE("telecom value=\"tel:"+c8+"\" use=\""+c9+"\"", "");
@@ -287,17 +287,17 @@ public class CDA {
 		TAG OFF27 =wcda.xml_CREATE("postalCode", ""+c6+"");
 		TAG OFF28 =wcda.xml_CREATE("streetAddressLine",""+c7+"");
 
-		TAG CO0 = wcda.xml_CREATE("component", "");
-		TAG CO1 = wcda.xml_CREATE("structuredBody", "");
-		TAG CO2 = wcda.xml_CREATE("languageCode code=\"pt-BR\"","");
-		TAG CO3 = wcda.xml_CREATE("component", "");
-		TAG CO4 = wcda.xml_CREATE("section classCode=\""+v0+"\" moodCode=\""+v1+"\"","");
-		TAG CO5 = wcda.xml_CREATE("templateId root=\"2.16.840.1.113883."+v2+"\"", ""); 
-		TAG CO6 = wcda.xml_CREATE("code code=\""+v3+"\" codeSystem=\"2.16.840.1.113883."+v4+"\" codeSystemName=\""+v5+"\" displayName=\""+v6+"\"","");
-		TAG CO7 = wcda.xml_CREATE("title", ""+v7+""); 
-		TAG CO8 = wcda.xml_CREATE("text", ""+v8+"");  
-		TAG CO9 = wcda.xml_CREATE("entry typeCode=\""+v9+"\"", ""); 
-		TAG CO10 = wcda.xml_CREATE("act classCode=\"ACT\" moodCode=\""+v1+"\"", "");
+		TAG CO0 =wcda.xml_CREATE("component", "");
+		TAG CO1 =wcda.xml_CREATE("structuredBody", "");
+		TAG CO2 =wcda.xml_CREATE("languageCode code=\"pt-BR\"","");
+		TAG CO3 =wcda.xml_CREATE("component", "");
+		TAG CO4 =wcda.xml_CREATE("section classCode=\""+v0+"\" moodCode=\""+v1+"\"","");
+		TAG CO5 =wcda.xml_CREATE("templateId root=\"2.16.840.1.113883."+v2+"\"", ""); 
+		TAG CO6 =wcda.xml_CREATE("code code=\""+v3+"\" codeSystem=\"2.16.840.1.113883."+v4+"\" codeSystemName=\""+v5+"\" displayName=\""+v6+"\"","");
+		TAG CO7 =wcda.xml_CREATE("title", ""+v7+""); 
+		TAG CO8 =wcda.xml_CREATE("text", ""+v8+"");  
+		TAG CO9 =wcda.xml_CREATE("entry typeCode=\""+v9+"\"", ""); 
+		TAG CO10 =wcda.xml_CREATE("act classCode=\"ACT\" moodCode=\""+v1+"\"", "");
 		TAG CO11 =wcda.xml_CREATE("templateId root=\"2.16.840.1.113883."+v10+"\"",""); 
 		TAG CO12 =wcda.xml_CREATE("id nullFlavor=\""+v11+"\"", "");
 		TAG CO13 =wcda.xml_CREATE("code code=\""+v12+"\" codeSystem=\"2.16.840.1.113883."+v13+"\"",""); 
@@ -310,11 +310,11 @@ public class CDA {
 		TAG CO20 = wcda.xml_CREATE("id nullFlavor=\""+v11+"\"", "");
 		TAG CO21 = wcda.xml_CREATE("code code=\"ASSERTION\" codeSystem=\"2.16.840.1.113883."+v18+"\"",""); 
 		TAG CO22 = wcda.xml_CREATE("text mediaType=\""+v19+"\"", ""); 
-		TAG CO23 = wcda.xml_CREATE("reference value=\""+v20+"\"", ""); 
-		TAG CO24 = wcda.xml_CREATE("statusCode code=\""+v21+"\"", ""); 
-		TAG CO25 = wcda.xml_CREATE("effectiveTime", "");
-		TAG CO26 = wcda.xml_CREATE("low value=\""+v15+"\"", "");
-		TAG CO27 = wcda.xml_CREATE("value xsi:type=\""+v22+"\" nullFlavor=\""+c3+"\"", ""); 
+		TAG CO23 =wcda.xml_CREATE("reference value=\""+v20+"\"", ""); 
+		TAG CO24 =wcda.xml_CREATE("statusCode code=\""+v21+"\"", ""); 
+		TAG CO25 =wcda.xml_CREATE("effectiveTime", "");
+		TAG CO26 =wcda.xml_CREATE("low value=\""+v15+"\"", "");
+		TAG CO27 =wcda.xml_CREATE("value xsi:type=\""+v22+"\" nullFlavor=\""+c3+"\"", ""); 
 
 		TAG P19 =wcda.xml_CREATE("recordTarget","");
 		TAG P20 =wcda.xml_CREATE("patientRole","");
@@ -347,7 +347,7 @@ public class CDA {
 		TAG COMP86 = wcda.xml_CREATE("content",""+C81+"");
 		TAG COMP87 = wcda.xml_CREATE("item","");
 		TAG COMP88 = wcda.xml_CREATE("content",""+C82+"");
-		TAG COMP89 = wcda.xml_CREATE("entry"," ");
+		//TAG COMP89 = wcda.xml_CREATE("entry","");
 		
 		TAG COMP70 = wcda.xml_CREATE("component","");
 		TAG COMP71 = wcda.xml_CREATE("section","");
@@ -358,7 +358,7 @@ public class CDA {
 		TAG COMP76 = wcda.xml_CREATE("content",""+C71+"");
 		TAG COMP77 = wcda.xml_CREATE("item","");
 		TAG COMP78 = wcda.xml_CREATE("content",""+C72+"");
-		TAG COMP79 = wcda.xml_CREATE("entry"," ");
+		//TAG COMP79 = wcda.xml_CREATE("entry","");
 		
 		TAG COMP60 = wcda.xml_CREATE("component","");
 		TAG COMP61 = wcda.xml_CREATE("section classCode=\""+v0+"\" moodCode=\""+v1+"\"","");
@@ -406,7 +406,7 @@ public class CDA {
 		TAG COMP56 = wcda.xml_CREATE("content",""+C51+"");
 		TAG COMP57 = wcda.xml_CREATE("item","");
 		TAG COMP58 = wcda.xml_CREATE("content",""+C52+"");
-		TAG COMP59 = wcda.xml_CREATE("entry"," ");
+		//TAG COMP59 = wcda.xml_CREATE("entry","");
 		
 		TAG COMP40 = wcda.xml_CREATE("component","");
 		TAG COMP41 = wcda.xml_CREATE("section","");
@@ -415,10 +415,10 @@ public class CDA {
 		TAG COMP44 = wcda.xml_CREATE("list","");
 		TAG COMP45 = wcda.xml_CREATE("item","");
 		TAG COMP46 = wcda.xml_CREATE("content",""+C41+"");
-		TAG COMP47 = wcda.xml_CREATE("entry"," ");
+		//TAG COMP47 = wcda.xml_CREATE("entry","");
 		
 		TAG COMP30 = wcda.xml_CREATE("component","");
-		TAG COMP31 = wcda.xml_CREATE("section classcode=\""+v0+"\" moodCode=\""+v1+"\"","");
+		TAG COMP31 = wcda.xml_CREATE("section classCode=\""+v0+"\" moodCode=\""+v1+"\"","");
 		TAG COMP32 = wcda.xml_CREATE("title",""+C30+"");
 		TAG COMP33 = wcda.xml_CREATE("text","");
 		TAG COMP34 = wcda.xml_CREATE("list","");
@@ -431,7 +431,7 @@ public class CDA {
 		TAG COMP311 = wcda.xml_CREATE("code code=\""+C34+"\" codeSystem=\"2.16.840.1.113883."+v4+"\" codeSystemName=\""+v5+"\" displayName=\""+C30+"\"",""); 
 		TAG COMP312 = wcda.xml_CREATE("statusCode code=\""+C35+"\"","");
 		TAG COMP313 = wcda.xml_CREATE("effectiveTime","");
-		TAG COMP314 = wcda.xml_CREATE("low value=\""+v14+"\"","");
+		TAG COMP314 = wcda.xml_CREATE("low value=\""+v15+"\"","");
 		TAG COMP315 = wcda.xml_CREATE("entryRelationship typeCode=\""+v16+"\"","");
 		TAG COMP316 = wcda.xml_CREATE("observation nullFlavor=\""+C36+"\" classCode=\"OBS\" moodCode=\""+v1+"\"",""); 
 		TAG COMP317 = wcda.xml_CREATE("templateId root=\"2.16.840.1.113883."+C37+"\"","");
@@ -439,7 +439,7 @@ public class CDA {
 		TAG COMP319 = wcda.xml_CREATE("code code=\"ASSERTION\" codeSystem=\"2.16.840.1.113883."+v18+"\" codeSystemName=\"ActCode\"","");
 		TAG COMP320 = wcda.xml_CREATE("statusCode code=\""+v21+"\"","");
 		TAG COMP321 = wcda.xml_CREATE("effectiveTime","");
-		TAG COMP322 = wcda.xml_CREATE("low value=\""+v14+"\"","");
+		TAG COMP322 = wcda.xml_CREATE("low value=\""+v15+"\"","");
 		TAG COMP323 = wcda.xml_CREATE("value xsi:type=\"CD\" code=\""+C38+"\" codeSystem=\"2.16.840.1.113883."+C39+"\"",""); 
 		TAG COMP324 = wcda.xml_CREATE("originalText","");
 		TAG COMP325 = wcda.xml_CREATE("reference value=\""+C310+"\"","");  
@@ -457,7 +457,7 @@ public class CDA {
 		TAG COMP24 = wcda.xml_CREATE("list","");
 		TAG COMP25 = wcda.xml_CREATE("item","");
 		TAG COMP26 = wcda.xml_CREATE("content",""+C21+"");
-		TAG COMP27 = wcda.xml_CREATE("entry"," ");
+		//TAG COMP27 = wcda.xml_CREATE("entry","");
 
 		TAG COMP10 = wcda.xml_CREATE("component","");
 		TAG COMP11 = wcda.xml_CREATE("section","");
@@ -466,7 +466,7 @@ public class CDA {
 		TAG COMP14 = wcda.xml_CREATE("list","");
 		TAG COMP15 = wcda.xml_CREATE("item","");
 		TAG COMP16 = wcda.xml_CREATE("content",""+C111+"");
-		TAG COMP17 = wcda.xml_CREATE("entry"," ");
+		//TAG COMP17 = wcda.xml_CREATE("entry","");
 
 		wcda.xml_INSERT(P15,P16);
 		wcda.xml_INSERT(P20,P15);
@@ -552,7 +552,7 @@ public class CDA {
 		wcda.xml_INSERT(COMP85, COMP86);
 		wcda.xml_INSERT(COMP84, COMP85);
 		wcda.xml_INSERT(COMP83, COMP84);
-		wcda.xml_INSERT(COMP81, COMP89);
+		//wcda.xml_INSERT(COMP81, COMP89);
 		wcda.xml_INSERT(COMP81, COMP83);
 		wcda.xml_INSERT(COMP81, COMP82);
 		wcda.xml_INSERT(COMP80, COMP81);
@@ -563,7 +563,7 @@ public class CDA {
 		wcda.xml_INSERT(COMP75, COMP76);
 		wcda.xml_INSERT(COMP74, COMP75);
 		wcda.xml_INSERT(COMP73, COMP74);
-		wcda.xml_INSERT(COMP71, COMP79);
+		//wcda.xml_INSERT(COMP71, COMP79);
 		wcda.xml_INSERT(COMP71, COMP73);
 		wcda.xml_INSERT(COMP71, COMP72);
 		wcda.xml_INSERT(COMP70, COMP71);
@@ -611,7 +611,7 @@ public class CDA {
 		wcda.xml_INSERT(COMP55, COMP56);
 		wcda.xml_INSERT(COMP54, COMP55);
 		wcda.xml_INSERT(COMP53, COMP54);
-		wcda.xml_INSERT(COMP51, COMP59);
+		//wcda.xml_INSERT(COMP51, COMP59);
 		wcda.xml_INSERT(COMP51, COMP53);
 		wcda.xml_INSERT(COMP51, COMP52);
 		wcda.xml_INSERT(COMP50, COMP51);
@@ -620,7 +620,7 @@ public class CDA {
 		wcda.xml_INSERT(COMP45, COMP46);
 		wcda.xml_INSERT(COMP44, COMP45);
 		wcda.xml_INSERT(COMP43, COMP44);
-		wcda.xml_INSERT(COMP41, COMP47);
+		//wcda.xml_INSERT(COMP41, COMP47);
 		wcda.xml_INSERT(COMP41, COMP43);
 		wcda.xml_INSERT(COMP41, COMP42);
 		wcda.xml_INSERT(COMP40, COMP41);
@@ -662,7 +662,7 @@ public class CDA {
 		wcda.xml_INSERT(COMP25, COMP26);
 		wcda.xml_INSERT(COMP24, COMP25);
 		wcda.xml_INSERT(COMP23, COMP24);
-		wcda.xml_INSERT(COMP21, COMP27);
+		//wcda.xml_INSERT(COMP21, COMP27);
 		wcda.xml_INSERT(COMP21, COMP23);
 		wcda.xml_INSERT(COMP21, COMP22);
 		wcda.xml_INSERT(COMP20, COMP21);
@@ -671,7 +671,7 @@ public class CDA {
 		wcda.xml_INSERT(COMP15, COMP16);
 		wcda.xml_INSERT(COMP14, COMP15);
 		wcda.xml_INSERT(COMP13, COMP14);
-		wcda.xml_INSERT(COMP11, COMP17);
+		//wcda.xml_INSERT(COMP11, COMP17);
 		wcda.xml_INSERT(COMP11, COMP13);
 		wcda.xml_INSERT(COMP11, COMP12);
 		wcda.xml_INSERT(COMP10, COMP11);
