@@ -1,7 +1,7 @@
 package br.com.multcare.CDA;
 
 public class ClassTest {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		CDA cda = new CDA();
 		
 		cda.CDA_HEADER("UV","1.3","POCD_HD000040","10.20.1","M345","3.933","Diagnostico utilizando MultCare",
