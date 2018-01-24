@@ -3,14 +3,37 @@ package br.com.multcare.CDA;
 public class ClassTest {
 	public static void main(String[] args) {
 		CDA cda = new CDA();
+		PacientTest paciente = new PacientTest(); //Paciente para teste
+		paciente.setId("123");
+		paciente.setPrimeiroNome("wagner");
+		paciente.setSobrenome("williams");
+		paciente.setAnoNascimento("1995");
+		paciente.setMesNascimento("05");
+		paciente.setDiaNascimento("22");
+		paciente.setEndereco("rua ufal, n 465");
+		paciente.setGenero("M");
+		paciente.setTelefone("+55(81)99954684");
+		paciente.setLocalNascimento("maternidade santo wagner");
+		paciente.setEnderecoNascimento("Maceio-al");
+		paciente.setCor();
+		paciente.setEstadoCivil();
+		paciente.setId_exten();
+		paciente.setRaca();
+		paciente.setReligiao();
 		
+		MedicoTest medico = new MedicoTest(); // M�dico para teste.
+		medico.setPrimeiroNome("Allan");
+		medico.setSobrenome("Amargo");
+		medico.setTelefone("+55(52)988598559");
+		medico.setEndereco("Uniao dos palmarinos - al");
+		medico.setCrm("CRM-AL 125666");
+	
 		cda.CDA_HEADER("UV","1.3","POCD_HD000040","10.20.1","M345","3.933","Diagnostico utilizando MultCare",
 				   "410.9","6.103","ICD-9-CM","20171003","N","Normal","5.25","Confidentiality","MM1","1");
 
-		cda.CDA_PATIENT("12345","Endereço do paciente","+55(082)9996-5599","Primeiro nome paciente","sobrenome",
-					"M","5.1","20170924","nullFlavor","nullFlavor","nullFlavor","nullFlavor","...","...","M555");
+		cda.CDA_PATIENT(paciente);
 
-		cda.CDA_AUTHOR("CRM456546", "Endereço do médico", "+55(082)9996-5599", "Primeiro nome do médico", "Sobrenome");
+		cda.CDA_AUTHOR(medico);
 
 		cda.CDA_AUTHENTICATOR("S");
 

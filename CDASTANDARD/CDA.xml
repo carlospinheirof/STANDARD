@@ -12,24 +12,24 @@
 <copyTime value='20171003'/>
 <recordTarget>
 <patientRole>
-<id extension="12345" root="2.16.840.1.113883.3.933"/>
-<addr >Endereço do paciente</addr>
-<telecom value="+55(082)9996-5599"/>
+<id extension="123" root="2.16.840.1.113883.3.933"/>
+<addr >rua ufal, n 465</addr>
+<telecom value="+55(81)99954684"/>
 <patient>
 <name>
-<given>Primeiro nome paciente</given>
-<family>sobrenome</family>
+<given>wagner</given>
+<family>williams</family>
 </name>
 <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
-<birthTime value="20170924"/>
+<birthTime value="19950522"/>
 <maritalStatusCode code='nullFlavor'/>
 <religiousAffiliationCode code='nullFlavor'/>
 <raceCode code='nullFlavor'/>
 <ethnicGroupCode code='nullFlavor'/>
 <birthplace>
 <place>
-<name >...</name>
-<addr >...</addr>
+<name >maternidade santo wagner</name>
+<addr >Maceio-al</addr>
 </place>
 </birthplace>
 </patient>
@@ -41,13 +41,13 @@
 <author>
 <time value = "20171003"/>
 <assignedAuthor>
-<id root='2.16.840.1.113883.3.933' extension='CRM456546'/>
-<addr>Endereço do médico</addr>
-<telecom value = '+55(082)9996-5599'/>
+<id root='2.16.840.1.113883.3.933' extension='CRM-AL 125666'/>
+<addr>Uniao dos palmarinos - al</addr>
+<telecom value = '+55(52)988598559'/>
 <assignedPerson>
 <name>
-<given>Primeiro nome do médico</given>
-<family>Sobrenome</family>
+<given>Allan</given>
+<family>Amargo</family>
 </name>
 </assignedPerson>
 </assignedAuthor>
@@ -64,11 +64,11 @@
 <time value="20171003"/>
 <signatureCode code="S"/>
 <assignedEntity>
-<id extension="CRM456546" root="2.16.840.1.113883.3.933"/>
+<id extension="CRM-AL 125666" root="2.16.840.1.113883.3.933"/>
 <assignedPerson>
 <name>
-<given>Primeiro nome do médico</given>
-<family>Sobrenome</family>
+<given>Allan</given>
+<family>Amargo</family>
 </name>
 </assignedPerson>
 </assignedEntity>
@@ -126,7 +126,7 @@
 <component>
 <section classCode="DOCSECT" moodCode="EVN">
 <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
-<code code="11450-4" codeSystem="2.16.840.1.113883. 6.1" codeSystemName="LOINC" displayName="Problema atual"/>
+<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema atual"/>
 <title>Histórico da doença atual</title>
 <text>Ditar como está o histórico do paciente em relação a doença que ele possui.</text>
 <entry typeCode="DRIV">
@@ -167,7 +167,6 @@
 </item>
 </list>
 </text>
-<entry> </entry>
 </section>
 </component>
 <component>
@@ -180,11 +179,10 @@
 </item>
 </list>
 </text>
-<entry> </entry>
 </section>
 </component>
 <component>
-<section classcode="DOCSECT" moodCode="EVN">
+<section classCode="DOCSECT" moodCode="EVN">
 <title>Alergias</title>
 <text>
 <list>
@@ -197,10 +195,10 @@
 <act classCode="ACT" moodCode="EVN">
 <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
 <id root="1.3.6.1.4.1.16517" extension="C33 = 1"/>
-<code code="48765-2" codeSystem="2.16.840.1.113883. 6.1" codeSystemName="LOINC" displayName="Alergias"/>
+<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alergias"/>
 <statusCode code="active"/>
 <effectiveTime>
-<low value="active"/>
+<low value="20140212130114"/>
 </effectiveTime>
 <entryRelationship typeCode="SUBJ">
 <observation nullFlavor="NASK" classCode="OBS" moodCode="EVN">
@@ -209,7 +207,7 @@
 <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
 <statusCode code="completed"/>
 <effectiveTime>
-<low value="active"/>
+<low value="20140212130114"/>
 </effectiveTime>
 <value xsi:type="CD" code="419199007" codeSystem="2.16.840.1.113883.6.96">
 <originalText>
@@ -219,7 +217,7 @@
 <entryRelationship typeCode="SUBJ" inversionInd="true">
 <observation classCode="OBS" moodCode="EVN">
 <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-<code code="33999-4" codeSystem="2.16.840.1.113883. 6.1"/>
+<code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
 <statusCode code="completed"/>
 <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="active"/>
 </observation>
@@ -240,7 +238,6 @@
 </item>
 </list>
 </text>
-<entry> </entry>
 </section>
 </component>
 <component>
@@ -256,13 +253,12 @@
 </item>
 </list>
 </text>
-<entry> </entry>
 </section>
 </component>
 <component>
 <section classCode="DOCSECT" moodCode="EVN">
 <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
-<code code="30954-2" codeSystem="2.16.840.1.113883. 6.1" codeSystemName="LOINC" displayName="Exames de laboratório"/>
+<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Exames de laboratório"/>
 <title>Exames de laboratório</title>
 <text>
 <list>
@@ -278,13 +274,13 @@
 <organizer classCode="CLUSTER" moodCode="EVN">
 <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
 <id root="1.3.6.1.4.1.16517" extension="100025030719-A97875DA-940F-11E3-90AC-1CC4B7D83400"/>
-<code code="2951-2" codeSystem="2.16.840.1.113883. 6.1" codeSystemName="LOINC" displayName="glicose [Massa/volume] no Plasma"/>
+<code code="2951-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="glicose [Massa/volume] no Plasma"/>
 <statusCode code="completed"/>
 <component>
 <observation classCode="OBS" moodCode="EVN">
 <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
 <id root="1.3.6.1.4.1.16517" extension="100025030719-A97875DA-940F-11E3-90AC-1CC4B7D83400"/>
-<code code="2951-2" codeSystem="2.16.840.1.113883. 6.1" codeSystemName="LOINC" displayName="glicose [Massa/volume] no Plasma">
+<code code="2951-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="glicose [Massa/volume] no Plasma">
 <originalText>SODIUM</originalText>
 </code>
 <text mediaType="text/plain">
@@ -295,7 +291,7 @@
 <value  xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="141" unit="mg/dl"/>
 <entryRelationship typeCode="REFR" contextConductionInd="true">
 <observation classCode="OBS" moodCode="EVN">
-<code code="48766-0" codeSystem="2.16.840.1.113883. 6.1" codeSystemName="LOINC" displayName="Information source"/>
+<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"/>
 <statusCode code="completed"/>
 <value  xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Nome do lab</value>
 </observation>
@@ -324,7 +320,6 @@
 </item>
 </list>
 </text>
-<entry> </entry>
 </section>
 </component>
 <component>
@@ -340,7 +335,6 @@
 </item>
 </list>
 </text>
-<entry> </entry>
 </section>
 </component>
 </structuredBody>

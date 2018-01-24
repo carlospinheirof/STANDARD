@@ -45,34 +45,29 @@ public class CDA {
 		this.s15 = SET_ID;
 		this.s16 = VERSION_NUMBER;
 	}
-	public void CDA_PATIENT(String ID_PATIENT,String ADDR,
-		String PHONE,String NAME,String FAMILY,String ADMINISTRATIVE,
-		String CODE_SYSTEM,String BIRTH,String MARITAL_STATUS,
-		String RELIGIOUS_AFFILIATION,String RACE,String ETHNIC_GROUP,
-		String NAME_BIRTH_PLACE,String ADDR_BIRTH_PLACE,String ID_EXTENSION0) {
-		this.p0 = ID_PATIENT;
-		this.p1 = ADDR;
-		this.p2 = PHONE;
-		this.p3 = NAME;
-		this.p4 = FAMILY;
-		this.p5 = ADMINISTRATIVE;
-		this.p6 = CODE_SYSTEM;
-		this.p7 = BIRTH;
-		this.p8 = MARITAL_STATUS;
-		this.p9 = RELIGIOUS_AFFILIATION;
-		this.p10 = RACE;
-		this.p11 = ETHNIC_GROUP;
-		this.p12 = NAME_BIRTH_PLACE;
-		this.p13 = ADDR_BIRTH_PLACE;
-		this.p14 = ID_EXTENSION0;
+	public void CDA_PATIENT(PacientTest paciente) {
+		this.p0 = paciente.getId(); //ID_PATIENT;
+		this.p1 = paciente.getEndereco(); //ADDR;
+		this.p2 = paciente.getTelefone(); //PHONE;
+		this.p3 = paciente.getPrimeiroNome(); //NAME;
+		this.p4 = paciente.getSobrenome(); //FAMILY;
+		this.p5 = paciente.getGenero(); //ADMINISTRATIVE;
+		this.p6 = "5.1"; //CODE_SYSTEM; ???
+		this.p7 = paciente.getAnoNascimento() + paciente.getMesNascimento() + paciente.getDiaNascimento();//BIRTH;
+		this.p8 = paciente.getEstadoCivil();//MARITAL_STATUS;
+		this.p9 = paciente.getReligiao();//RELIGIOUS_AFFILIATION;
+		this.p10 = paciente.getRaca();//RACE;
+		this.p11 = paciente.getCor();//ETHNIC_GROUP;
+		this.p12 = paciente.getLocalNascimento();//NAME_BIRTH_PLACE;
+		this.p13 = paciente.getEnderecoNascimento();//ADDR_BIRTH_PLACE;
+		this.p14 = paciente.getId_exten();//ID_EXTENSION0;
 	}
-	public void CDA_AUTHOR(String CRM,String ADDR,
-	    String PHONE,String NAME,String FAMILY) {
-		this.a1 = CRM;
-		this.a2 = ADDR;
-		this.a3 = PHONE;
-		this.a4 = NAME;
-		this.a5 = FAMILY;
+	public void CDA_AUTHOR(MedicoTest medico) {
+		this.a1 =  medico.getcrm(); //CRM;
+		this.a2 = medico.getEndereco(); //ADDR;
+		this.a3 = medico.getTelefone(); //PHONE;
+		this.a4 = medico.getPrimeiroNome(); //NAME;
+		this.a5 = medico.getSobrenome(); //FAMILY;
 	}
 	public void CDA_AUTHENTICATOR(String CODE) {
 		this.AUT = CODE;
