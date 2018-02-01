@@ -33,17 +33,17 @@ public class CDA {
 		this.s3 = TEMPLATE;
 		this.s4 = ID_ROOT;
 		this.s5 = EXTENSION1;
-		this.s6 = DISPLAY_NAME;
+		this.s6 = DISPLAY_NAME; //fixo
 		this.s7 = CODE;
-		this.s8 = CODE_SYSTEM;
-		this.s9 = CODE_SYSTEM_NAME;
+		this.s8 = CODE_SYSTEM; //fixo
+		this.s9 = CODE_SYSTEM_NAME; //fixo
 		this.s10 = EFFETIVE_TIME;
-		this.s11 = CONFIDENTIALY;
-		this.s12 = DISPLAY_NAME0;
-		this.s13 = CODE_SYSTEM0;
-		this.s14 = CODE_SYSTEM_NAME0;
-		this.s15 = SET_ID;
-		this.s16 = VERSION_NUMBER;
+		this.s11 = CONFIDENTIALY; //fixo
+		this.s12 = DISPLAY_NAME0; //fixo
+		this.s13 = CODE_SYSTEM0; //fixo
+		this.s14 = CODE_SYSTEM_NAME0; //fixo
+		this.s15 = SET_ID; //gerado por nos, código comum a todas as versões.
+		this.s16 = VERSION_NUMBER; //gerado por nos sempre somando mais um quando refazer um mesmo documento.
 	}
 	public void CDA_PATIENT(PacientTest paciente) {
 		this.p0 = paciente.getId(); //ID_PATIENT;
@@ -70,7 +70,7 @@ public class CDA {
 		this.a5 = medico.getSobrenome(); //FAMILY;
 	}
 	public void CDA_AUTHENTICATOR(String CODE) {
-		this.AUT = CODE;
+		this.AUT = CODE; //fixado em LA.
 	}
 	public void CDA_RELATED(String TYPE_CODE,String ID,String EXTENSION,String VERSION) {
 		this.r0 = TYPE_CODE;
@@ -238,7 +238,7 @@ public class CDA {
 
 		TAG L0 = wcda.xml_CREATE("legalAuthenticator", "");
 		TAG L1 = wcda.xml_CREATE("time value=\""+s10+"\"", "");
-		TAG L2 = wcda.xml_CREATE("signatureCode code=\""+AUT+"\"","");
+		TAG L2 = wcda.xml_CREATE("signatureCode code=\""+AUT+"\"",""); //mudar.
 		TAG L3 = wcda.xml_CREATE("assignedEntity", "");
 		TAG L4 = wcda.xml_CREATE("id extension=\""+a1+"\" root=\"2.16.840.1.113883."+s5+"\"","");
 		TAG L5 = wcda.xml_CREATE("assignedPerson","");
@@ -246,7 +246,7 @@ public class CDA {
 		TAG L7 = wcda.xml_CREATE("given", ""+a4+"");
 		TAG L8 = wcda.xml_CREATE("family",""+a5+"");
 
-		TAG R0 = wcda.xml_CREATE("relatedDocument typeCode=\""+r0+"\"", "");
+		TAG R0 = wcda.xml_CREATE("relatedDocument typeCode=\""+r0+"\"", ""); //Depende se é atualização(APND) ou primeiro(APND) do ParentDocument.
 		TAG R1 = wcda.xml_CREATE("parentDocument","");
 		TAG R2 = wcda.xml_CREATE("id extension=\""+r1+"\" root=\"2.16.840.1.113883."+s5+"\"", "");
 		TAG R3 = wcda.xml_CREATE("setId extension=\""+r2+"\" root=\"2.16.840.1.113883."+s5+"\"", "");
@@ -256,7 +256,7 @@ public class CDA {
 		TAG OFF1 =wcda.xml_CREATE("encompassingEncounter", "");
 		TAG OFF2 =wcda.xml_CREATE("id root=\""+c0+"\" extension=\""+c1+"\"", "");
 		TAG OFF3 =wcda.xml_CREATE("effectiveTime value=\""+c2+"\"","");
-		TAG OFF4 =wcda.xml_CREATE("responsibleParty","");
+		TAG OFF4 =wcda.xml_CREATE("responsibleParty",""); //Pessoa ou entidade responsavel pelo diagnostico/exame.
 		TAG OFF5 =wcda.xml_CREATE("assignedEntity", "");
 		TAG OFF6 =wcda.xml_CREATE("id nullFlavor=\""+c3+"\"", "");
 		TAG OFF7 =wcda.xml_CREATE("addr","");
@@ -272,7 +272,7 @@ public class CDA {
 		TAG OFF17 =wcda.xml_CREATE("given", ""+c12+"");
 		TAG OFF18 =wcda.xml_CREATE("suffix", ""+c13+"");
 		TAG OFF19 =wcda.xml_CREATE("location","");
-		TAG OFF20 =wcda.xml_CREATE("healthCareFacility", "");
+		TAG OFF20 =wcda.xml_CREATE("healthCareFacility", ""); //Aqui o hospital ou clinica que o médico trabalha.
 		TAG OFF21 =wcda.xml_CREATE("id root=\""+c0+"\" extension=\""+c1+"\"", "");
 		TAG OFF22 =wcda.xml_CREATE("location","");
 		TAG OFF23 =wcda.xml_CREATE("name", ""+c14+"");
@@ -322,7 +322,7 @@ public class CDA {
 		TAG P18 =wcda.xml_CREATE("family",""+p4+"");
 		TAG P5 = wcda.xml_CREATE("administrativeGenderCode code=\""+p5+"\" codeSystem=\"2.16.840.1.113883."+p6+"\"",""); 
 		TAG P6 = wcda.xml_CREATE("birthTime value=\""+p7+"\"","");
-		TAG P7 = wcda.xml_CREATE("maritalStatusCode code='"+p8+"'","");
+		TAG P7 = wcda.xml_CREATE("maritalStatusCode code='"+p8+"'",""); //olhar melhor aqui.
 		TAG P8 = wcda.xml_CREATE("religiousAffiliationCode code='"+p9+"'","");
 		TAG P9 = wcda.xml_CREATE("raceCode code='"+p10+"'","");
 		TAG P10 =wcda.xml_CREATE("ethnicGroupCode code='"+p11+"'","");

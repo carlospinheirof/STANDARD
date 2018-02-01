@@ -48,7 +48,7 @@ public class ClassTest {
 					"DRIV","10.20.22.4.3","NI","CONC","5.6","active","20140212130114","SUBJ","10.20.22.4.4","5.4","text/plain",
 					"#Problem-1","completed","CD");
 
-		cda.CDA_HISTORY_DOCTOR("Histórico médico passado", "Nome da doença");
+		cda.CDA_HISTORY_DOCTOR("Histórico médico passado", "Nome da doença"); //verificar cada codigo.
 
 		cda.CDA_MEDICINES("Medicamentos", "Nome do medicamento : dosagem");
 
